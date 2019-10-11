@@ -1,12 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faBars,
+  faBell,
+  faClock,
+  faComments,
+  faEnvelope,
+  faSearch,
+  faStar, faThLarge,
+  faUsers
+} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
   return (
     <nav className="main-header navbar navbar-expand navbar-white navbar-light">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" data-widget="pushmenu" href="#"><i className="fas fa-bars"/></a>
+          <a className="nav-link" data-widget="pushmenu" href="#"><FontAwesomeIcon icon={faBars} /></a>
         </li>
         <li className="nav-item d-none d-sm-inline-block">
           <a href="#" className="nav-link">Home</a>
@@ -21,7 +32,7 @@ const Navbar = () => {
           <input className="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search"/>
             <div className="input-group-append">
               <button className="btn btn-navbar" type="submit">
-                <i className="fas fa-search"/>
+                <FontAwesomeIcon icon={faSearch} />
               </button>
             </div>
         </div>
@@ -30,7 +41,7 @@ const Navbar = () => {
       <ul className="navbar-nav ml-auto">
         <li className="nav-item dropdown">
           <a className="nav-link" data-toggle="dropdown" href="#">
-            <i className="far fa-comments"/>
+            <FontAwesomeIcon icon={faComments} />
             <span className="badge badge-danger navbar-badge">3</span>
           </a>
           <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
@@ -41,10 +52,10 @@ const Navbar = () => {
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       Brad Diesel
-                      <span className="float-right text-sm text-danger"><i className="fas fa-star"/></span>
+                      <span className="float-right text-sm text-danger"><FontAwesomeIcon icon={faStar} /></span>
                     </h3>
                     <p className="text-sm">Call me whenever you can...</p>
-                    <p className="text-sm text-muted"><i className="far fa-clock mr-1"/> 4 Hours Ago</p>
+                    <p className="text-sm text-muted"><FontAwesomeIcon icon={faClock} className={'mr-1'} /> 4 Hours Ago</p>
                   </div>
               </div>
             </a>
@@ -57,10 +68,10 @@ const Navbar = () => {
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       John Pierce
-                      <span className="float-right text-sm text-muted"><i className="fas fa-star"/></span>
+                      <span className="float-right text-sm text-muted"><FontAwesomeIcon icon={faStar} /></span>
                     </h3>
                     <p className="text-sm">I got your message bro</p>
-                    <p className="text-sm text-muted"><i className="far fa-clock mr-1"/> 4 Hours Ago</p>
+                    <p className="text-sm text-muted"><FontAwesomeIcon icon={faClock} className={'mr-1'} /> 4 Hours Ago</p>
                   </div>
               </div>
             </a>
@@ -73,10 +84,10 @@ const Navbar = () => {
                   <div className="media-body">
                     <h3 className="dropdown-item-title">
                       Nora Silvester
-                      <span className="float-right text-sm text-warning"><i className="fas fa-star"/></span>
+                      <span className="float-right text-sm text-warning"><FontAwesomeIcon icon={faStar} /></span>
                     </h3>
                     <p className="text-sm">The subject goes here</p>
-                    <p className="text-sm text-muted"><i className="far fa-clock mr-1"/> 4 Hours Ago</p>
+                    <p className="text-sm text-muted"><FontAwesomeIcon icon={faClock} className={'mr-1'} /> 4 Hours Ago</p>
                   </div>
               </div>
             </a>
@@ -86,24 +97,24 @@ const Navbar = () => {
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link" data-toggle="dropdown" href="#">
-            <i className="far fa-bell"/>
+            <FontAwesomeIcon icon={faBell} />
             <span className="badge badge-warning navbar-badge">15</span>
           </a>
           <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             <span className="dropdown-item dropdown-header">15 Notifications</span>
             <div className="dropdown-divider"/>
             <a href="#" className="dropdown-item">
-              <i className="fas fa-envelope mr-2"/> 4 new messages
+              <FontAwesomeIcon icon={faEnvelope} className={'mr-2'} /> 4 new messages
               <span className="float-right text-muted text-sm">3 mins</span>
             </a>
             <div className="dropdown-divider"/>
             <a href="#" className="dropdown-item">
-              <i className="fas fa-users mr-2"/> 8 friend requests
+              <FontAwesomeIcon icon={faUsers} className={'mr-2'} /> 8 friend requests
               <span className="float-right text-muted text-sm">12 hours</span>
             </a>
             <div className="dropdown-divider"/>
             <a href="#" className="dropdown-item">
-              <i className="fas fa-file mr-2"/> 3 new reports
+              <FontAwesomeIcon icon={faClock} className={'mr-1'} /> 3 new reports
               <span className="float-right text-muted text-sm">2 days</span>
             </a>
             <div className="dropdown-divider"/>
@@ -112,7 +123,7 @@ const Navbar = () => {
         </li>
         <li className="nav-item">
           <a className="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
-            <i className="fas fa-th-large"/>
+            <FontAwesomeIcon icon={faThLarge} />
           </a>
         </li>
       </ul>

@@ -1,17 +1,12 @@
-import React, { Fragment } from 'react';
-import Box from './Box';
-import DescriptionBlock from './DescriptionBlock';
-import SmallBox from './Smallbox';
-import PageHeader from './PageHeader';
-import ProgressBar from './ProgressBar';
-import Card from './Card';
-import Row from './Row';
+import React, { Fragment } from 'react'
+import SmallBox from './Smallbox'
+import PageHeader from './PageHeader'
 import {
   faUsers,
   faPaintBrush,
   faShoppingBag,
   faSmile
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 
 const DashboardPage = () => {
 
@@ -61,7 +56,7 @@ const DashboardPage = () => {
         </div>
       </section>
     </Fragment>
-  );
-};
+  )
+}
 
-export default DashboardPage;
+export default DashboardPage

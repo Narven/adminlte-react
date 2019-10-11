@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { BackgroundColor, ForegroundColor } from '../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faShoppingBag,
+  faArrowCircleRight,
   IconDefinition
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons'
 
 interface IStyledSmallBox {
   title?: string | number;
@@ -27,12 +27,6 @@ const StyledSmallBox = styled.div<IStyledSmallBox>`
   position: relative;
   margin-bottom: 1rem !important;
   background-color: ${props => {
-    console.debug('primary', props.primary);
-    console.debug('TITLEEEEE', props.title);
-    console.debug('success', props.success);
-    console.debug('info', props.info);
-    console.debug('danger', props.danger);
-    console.debug('warning', props.warning);
     if (props.primary === true) return BackgroundColor.Primary;
     if (props.success === true) return BackgroundColor.Success;
     if (props.info === true) return BackgroundColor.Info;
@@ -115,8 +109,8 @@ const SmallBox = (props: IStyledSmallBox) => {
       </StyledSmallBoxInner>
       <StyledIconBox>{renderMainIcon(props)}</StyledIconBox>
       <StyledFooter>
-        More Info
-        <FontAwesomeIcon icon={faShoppingBag} />
+        More Info&nbsp;
+        <FontAwesomeIcon icon={faArrowCircleRight} />
       </StyledFooter>
     </StyledSmallBox>
   );
