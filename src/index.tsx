@@ -4,14 +4,14 @@ import * as serviceWorker from './serviceWorker'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
-import App from './components/App/App'
-import reducers from './reducers'
+import Admin from './core/Admin'
+import reducers from './core/reducers'
 
 const store = createStore(reducers, applyMiddleware(thunk))
 
 const rendered = (
   <Provider store={store}>
-    <App />
+    <Admin />
   </Provider>
 )
 

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { BackgroundColor, ForegroundColor } from '../constants';
+import { BackgroundColor, ForegroundColor } from '../../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowCircleRight,

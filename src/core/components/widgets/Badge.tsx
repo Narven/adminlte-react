@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ForegroundColor, BackgroundColor } from '../constants';
+import { ForegroundColor, BackgroundColor } from '../../constants';
 
 interface IBadge {
   primary?: boolean;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BackgroundColor, BorderColor, ForegroundColor } from '../constants';
+import { BackgroundColor, BorderColor, ForegroundColor } from '../../constants';
 
 interface IButton {
   // MISSING DISABLED

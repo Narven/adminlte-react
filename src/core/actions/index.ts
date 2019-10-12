@@ -1,6 +1,6 @@
 import _ from 'lodash'
-import { CLIENTS_FETCH, MANAGER_FETCH } from "../constants"
-import ApiService from '../services/ApiService'
+import { CLIENTS_FETCH, MANAGER_FETCH } from "../../constants"
+import ApiService from '../../services/ApiService'
 
 // ********* ACTION CREATORS ***********
 type Fn = Function

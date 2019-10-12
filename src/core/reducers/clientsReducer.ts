@@ -1,4 +1,4 @@
-import { CLIENTS_FETCH } from '../constants'
+import { CLIENTS_FETCH } from '../../constants'
 
 interface IAction {
   type: string,

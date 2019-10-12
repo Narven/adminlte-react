@@ -3,7 +3,7 @@ import clientsReducer from './clientsReducer'
 import managersReducer from './managersReducer'
 
 export default combineReducers({
-  clients: clientsReducer,
   // @ts-ignore
-  managers: managersReducer
+  base: managersReducer,
+  auth: clientsReducer,
 })

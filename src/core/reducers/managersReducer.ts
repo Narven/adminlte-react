@@ -1,4 +1,4 @@
-import { MANAGER_FETCH } from "../constants"
+import { MANAGER_FETCH } from "../../constants"
 
 interface IAction {
   type: string,
